@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Tue Dec  7 11:40:41 2021
+
+Copyright TheAmirHK
+"""
 import numpy as np
 import sys
 import time 
@@ -462,7 +467,7 @@ class geneticalgorithm():
                 Body_conformity_rate (s[int(self.report2[i][1])],self.report2[i][6],self.report2[i][7]),\
                 Shaft_conformity_rate (s[int(self.report2[i][2])],self.report2[i][8],self.report2[i][9],self.report2[i][8])]
             Prob_list.append(Prob)
-#        print(Prob_list)
+
         PROB = open("Probabilities.dat", "wb")        
         pickle.dump(Prob_list , PROB) 
          
